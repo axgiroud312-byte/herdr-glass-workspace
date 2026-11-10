@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740">
+<rect width="1200" height="740" fill="#141418"/>
+<g font-family="Geist,sans-serif" fill="#e3e5e8">
+<rect x="244" width="956" height="740" fill="#141418"/>
+<circle cx="19" cy="20" r="6" fill="#ff5f57"/><circle cx="39" cy="20" r="6" fill="#febc2e"/><circle cx="59" cy="20" r="6" fill="#28c840"/>
+<text x="110" y="25" font-size="13" font-weight="600" fill="#adb2ba">Herdr</text>
+<text x="82" y="25" font-size="13" fill="#adb2ba">◧</text><text x="192" y="25" font-size="13" fill="#8b919b">← →</text>
+<text x="18" y="65" font-size="13" fill="#adb2ba">搜索</text><text x="157" y="65" font-size="14" fill="#adb2ba">☰　＋　↗</text>
+<text x="10" y="108" font-size="13" font-weight="600">项目文件夹</text><text x="220" y="108" font-size="16" fill="#8b919b">+</text>
+<rect x="8" y="144" width="228" height="28" rx="8" fill="#2C2C2F"/><text x="24" y="163" font-size="13">Glass Workspace</text>
+<text x="10" y="352" font-size="13" font-weight="600">Agent 实例</text>
+<rect x="8" y="370" width="228" height="28" rx="8" fill="#2C2C2F"/><text x="24" y="389" font-size="13">Codex</text>
+<text x="10" y="724" font-size="12" fill="#adb2ba">设置</text>
+<rect x="252" y="6" width="164" height="28" rx="8" fill="#232328"/><text x="262" y="25" font-size="12">Codex 1</text>
+<text x="434" y="25" font-size="12" fill="#adb2ba">终端 2</text><text x="598" y="25" font-size="16" fill="#adb2ba">+</text>
+<text x="1050" y="25" font-size="12" fill="#adb2ba">文件</text><text x="1102" y="25" font-size="12" fill="#adb2ba">Git</text><text x="1148" y="25" font-size="12" fill="#adb2ba">用量</text>
+<rect x="252" y="34" width="656" height="698" rx="10" fill="#232328"/><rect x="916" y="34" width="276" height="698" rx="10" fill="#232328"/>
+<text x="262" y="76" font-family="Consolas,monospace" font-size="14">&gt; codex</text><text x="262" y="106" font-size="13" fill="#adb2ba">终端工作区</text>
+<text x="926" y="70" font-size="13" font-weight="600">文件</text><text x="926" y="106" font-size="12" fill="#adb2ba">src</text><text x="942" y="134" font-size="12" fill="#adb2ba">main.js</text><text x="926" y="162" font-size="12" fill="#adb2ba">README.md</text>
+
+</g></svg>

@@ -1,0 +1,12 @@
+Glass Workspace
+Copyright 2026 axgiroud312-byte
+
+This distribution includes modified copies of the Herdr spaces, agents,
+pane, files, changes and new-menu mods, originally cloned from Herdr 0.1.11.
+Herdr is available at https://github.com/herdrdev/herdr-app and is licensed
+under the Apache License, Version 2.0. The upstream license is included in
+LICENSE. Modified JavaScript entry points are marked in their source.
+
+Provider logos identify the services shown by the local usage panel.
+Names and logos remain the property of their respective owners; this
+software license does not grant trademark rights or imply endorsement.

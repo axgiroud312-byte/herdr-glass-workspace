@@ -1,0 +1,295 @@
+{
+  "id": "root",
+  "title": "炭灰工作台",
+  "type": "row",
+  "titlebar": "none",
+  "traffic_lights": [
+    10,
+    14
+  ],
+  "background": "chrome",
+  "theme": "neutral-charcoal",
+  "ui_font": "Geist",
+  "font_size": 14,
+  "terminal_padding": [
+    10,
+    14
+  ],
+  "terminal_opacity": 1,
+  "preview": "layouts/glass-workspace.svg",
+  "resizable": false,
+  "children": [
+    {
+      "id": "sidebar",
+      "type": "column",
+      "size": {
+        "px": 244
+      },
+      "min": 244,
+      "max": 244,
+      "background": "chrome",
+      "children": [
+        {
+          "id": "sidebar-brand",
+          "type": "block",
+          "size": {
+            "px": 44
+          },
+          "content": {
+            "mod": "glass-shell",
+            "props": {
+              "role": "brand"
+            }
+          },
+          "window_drag": true
+        },
+        {
+          "id": "sidebar-head",
+          "type": "block",
+          "size": {
+            "px": 40
+          },
+          "content": {
+            "mod": "glass-shell",
+            "props": {
+              "role": "sidebar-head"
+            }
+          }
+        },
+        {
+          "id": "projects",
+          "type": "column",
+          "resizable": true,
+          "divider": {
+            "width": 1,
+            "color": "#2C2C2F"
+          },
+          "children": [
+            {
+              "id": "spaces",
+              "type": "block",
+              "size": {
+                "weight": 0.9123432
+              },
+              "min": 120,
+              "content": {
+                "mod": "shell-spaces"
+              }
+            },
+            {
+              "id": "agents",
+              "type": "block",
+              "size": {
+                "weight": 1.0876564
+              },
+              "min": 140,
+              "content": {
+                "mod": "shell-agents"
+              },
+              "background": "agent_area"
+            }
+          ],
+          "min": 0
+        },
+        {
+          "id": "sidebar-foot",
+          "type": "block",
+          "size": {
+            "px": 82
+          },
+          "content": {
+            "mod": "glass-shell",
+            "props": {
+              "role": "sidebar-foot"
+            }
+          }
+        }
+      ],
+      "hidden": false,
+      "resizable": false
+    },
+    {
+      "id": "workspace-inset",
+      "type": "column",
+      "min": 0,
+      "padding": [
+        8,
+        10
+      ],
+      "resizable": false,
+      "children": [
+        {
+          "id": "workspace",
+          "type": "column",
+          "min": 0,
+          "background": "chrome",
+          "radius": 0,
+          "resizable": false,
+          "children": [
+            {
+              "id": "tabs",
+              "type": "block",
+              "size": {
+                "px": 36
+              },
+              "content": {
+                "mod": "glass-shell",
+                "props": {
+                  "role": "tabs"
+                }
+              },
+              "background": "chrome",
+              "window_drag": true
+            },
+            {
+              "id": "work-views",
+              "type": "stack",
+              "active": "workspace-view",
+              "min": 0,
+              "children": [
+                {
+                  "id": "workspace-view",
+                  "type": "row",
+                  "min": 0,
+                  "resizable": true,
+                  "children": [
+                    {
+                      "id": "terminal-canvas",
+                      "type": "block",
+                      "padding": 0,
+                      "content": {
+                        "tab": "active",
+                        "pane": {
+                          "gap": 10,
+                          "radius": 12,
+                          "background": "background",
+                          "border": {
+                            "width": 4,
+                            "color": "background"
+                          },
+                          "focus": {
+                            "width": 4,
+                            "color": "background"
+                          },
+                          "header": {
+                            "content": {
+                              "mod": "shell-pane"
+                            },
+                            "height": 26,
+                            "position": "top",
+                            "reveal": "always"
+                          },
+                          "lone": true
+                        }
+                      },
+                      "min": 180,
+                      "radius": 12,
+                      "background": "chrome",
+                      "theme": "neutral-charcoal",
+                      "terminal_opacity": 1,
+                      "terminal_padding": [
+                        7,
+                        11
+                      ],
+                      "movable": true
+                    },
+                    {
+                      "id": "tool-panel",
+                      "type": "column",
+                      "size": {
+                        "px": 390.0
+                      },
+                      "min": 160,
+                      "max": 720,
+                      "hidden": true,
+                      "resizable": false,
+                      "background": "surface",
+                      "children": [
+                        {
+                          "id": "tool-views",
+                          "type": "stack",
+                          "active": "files",
+                          "min": 0,
+                          "children": [
+                            {
+                              "id": "files",
+                              "type": "block",
+                              "content": {
+                                "mod": "shell-files"
+                              },
+                              "radius": 12,
+                              "background": "chrome"
+                            },
+                            {
+                              "id": "changes",
+                              "type": "block",
+                              "content": {
+                                "mod": "shell-changes"
+                              },
+                              "radius": 12,
+                              "background": "chrome"
+                            },
+                            {
+                              "id": "issues",
+                              "type": "block",
+                              "min": 0,
+                              "radius": 12,
+                              "background": "chrome",
+                              "content": {
+                                "mod": "shell-issues"
+                              }
+                            }
+                          ],
+                          "radius": 12,
+                          "background": "chrome"
+                        }
+                      ],
+                      "radius": 12
+                    }
+                  ],
+                  "padding": [
+                    4,
+                    0
+                  ],
+                  "gap": 10,
+                  "background": "chrome",
+                  "divider": {
+                    "width": 0,
+                    "color": "background"
+                  }
+                },
+                {
+                  "id": "usage-view",
+                  "type": "column",
+                  "background": "chrome",
+                  "padding": [
+                    4,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "id": "usage-surface",
+                      "type": "block",
+                      "min": 0,
+                      "radius": 12,
+                      "background": "chrome",
+                      "content": {
+                        "mod": "insights"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "background": "chrome"
+            }
+          ]
+        }
+      ],
+      "background": "chrome"
+    }
+  ],
+  "divider": {
+    "width": 1,
+    "color": "#25252B"
+  }
+}
